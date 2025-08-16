@@ -1,6 +1,6 @@
 import { amazonApi } from "@/common/amazon-api";
 import { parseHTML } from "linkedom";
-import { HTTPException } from "hono/http-exception";
+import { HTTPException } from "hono";
 import { getCurrencyFromSymbol } from "@/common/utils/currency";
 import { parseNumber } from "@/common/utils/number";
 import { createImageVariants } from "@/common/utils/image";

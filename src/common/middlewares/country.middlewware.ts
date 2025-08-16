@@ -1,5 +1,4 @@
-import { Context, Next } from "hono";
-import { createMiddleware } from "hono/factory";
+import { Context, Next, createMiddleware } from "hono";
 import { parseCountry } from "../utils/country";
 
 export const countryMiddleware = createMiddleware(

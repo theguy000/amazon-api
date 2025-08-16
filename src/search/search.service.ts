@@ -5,7 +5,7 @@ import { getCurrencyFromSymbol } from "@/common/utils/currency";
 import { createImageVariants } from "@/common/utils/image";
 import { parseNumber } from "@/common/utils/number";
 import { SearchItem, SearchResult } from "@/types/Search";
-import { HTTPException } from "hono/http-exception";
+import { HTTPException } from "hono";
 import { parseHTML } from "linkedom";
 
 export const search = async ({
