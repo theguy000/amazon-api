@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import * as searchController from "@/search/search.controller";
+import * as searchController from "@/search/search.controller.ts";
 
 const search = new Hono();
 

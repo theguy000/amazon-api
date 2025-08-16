@@ -1,6 +1,6 @@
 import { Hono, HTTPException } from "hono";
-import routes from "@/routes";
-import graphql from "@/graphql";
+import routes from "@/routes.ts";
+import graphql from "@/graphql.ts";
 
 const app = new Hono();
 

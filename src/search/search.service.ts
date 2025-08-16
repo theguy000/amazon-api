@@ -1,10 +1,10 @@
-import { amazonApi } from "@/common/amazon-api";
-import logger from "@/common/logger";
-import { buildApiUrl } from "@/common/utils/api-url";
-import { getCurrencyFromSymbol } from "@/common/utils/currency";
-import { createImageVariants } from "@/common/utils/image";
-import { parseNumber } from "@/common/utils/number";
-import { SearchItem, SearchResult } from "@/types/Search";
+import { amazonApi } from "@/common/amazon-api/index.ts";
+import logger from "@/common/logger/index.ts";
+import { buildApiUrl } from "@/common/utils/api-url.ts";
+import { getCurrencyFromSymbol } from "@/common/utils/currency.ts";
+import { createImageVariants } from "@/common/utils/image.ts";
+import { parseNumber } from "@/common/utils/number.ts";
+import { SearchItem, SearchResult } from "@/types/Search.ts";
 import { HTTPException } from "hono";
 import { parseHTML } from "linkedom";
 

@@ -1,5 +1,5 @@
 import { Context, Next, createMiddleware } from "hono";
-import { parseCountry } from "../utils/country";
+import { parseCountry } from "../utils/country.ts";
 
 export const countryMiddleware = createMiddleware(
   async (c: Context, next: Next) => {

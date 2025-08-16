@@ -1,6 +1,6 @@
 import { Context } from "hono";
-import * as productService from "@/product/product.service";
-import { parseCountry } from "@/common/utils/country";
+import * as productService from "@/product/product.service.ts";
+import { parseCountry } from "@/common/utils/country.ts";
 
 export const get = async (c: Context) => {
   const id = c.req.param("id");
