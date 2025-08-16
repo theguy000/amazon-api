@@ -1,6 +1,5 @@
-import { Context } from "hono";
+import { Context, HTTPException } from "hono";
 import * as searchService from "@/search/search.service";
-import { HTTPException } from "hono/http-exception";
 import { parseCountry } from "@/common/utils/country";
 
 export const search = async (c: Context) => {

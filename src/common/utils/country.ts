@@ -1,5 +1,5 @@
 import { COUNTRYWISE_AMAZON_API_BASE } from "@/config";
-import { HTTPException } from "hono/http-exception";
+import { HTTPException } from "hono";
 
 export const parseCountry = (country: string) => {
   const countryBase =

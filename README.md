@@ -69,6 +69,51 @@ Cheers 🎉
 
 ## Deployment 🚀
 
+### Deno Deploy
+
+This project can be deployed on [Deno Deploy](https://deno.com/deploy) for better reliability and performance.
+
+#### Setup Steps
+
+1. **Fork or clone this repository**
+
+2. **Connect to Deno Deploy:**
+   - Go to [dash.deno.com](https://dash.deno.com)
+   - Create a new project
+   - Connect your GitHub repository
+   - Set the entrypoint to `main.ts`
+   - Choose "None (Custom)" as the framework preset
+
+3. **Environment Variables (if needed):**
+   - Add any required environment variables in the Deno Deploy dashboard
+   - Access them in your code using `Deno.env.get("VARIABLE_NAME")`
+
+4. **Deploy:**
+   - Push your changes to the connected branch
+   - Deno Deploy will automatically build and deploy your application
+
+#### Local Development
+
+```bash
+# Install Deno (if not already installed)
+curl -fsSL https://deno.land/install.sh | sh
+
+# Run the development server
+deno task dev
+
+# Or run directly
+deno run --allow-net --allow-env main.ts
+```
+
+#### Advantages over Cloudflare Workers
+- No ASN blocking issues with Amazon
+- Better TypeScript support
+- Native URL imports
+- More stable IP ranges
+- Simpler deployment process
+
+### Cloudflare Workers (Legacy)
+
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/tuhinpal/amazon-api)
 
 ## Implented country versions 🌍

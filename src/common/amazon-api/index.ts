@@ -1,4 +1,4 @@
-import { HTTPException } from "hono/http-exception";
+import { HTTPException } from "hono";
 
 export interface AmazonApiProps {
   amazonBase: string;

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["deno.ns", "deno.window"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "https://deno.land/x/hono@v4.3.1/jsx"
+  },
+  "imports": {
+    "@/": "./src/",
+    "hono": "https://deno.land/x/hono@v4.3.1/mod.ts",
+    "hono/": "https://deno.land/x/hono@v4.3.1/",
+    "@hono/graphql-server": "https://deno.land/x/hono_graphql@v0.4.3/mod.ts",
+    "graphql": "https://deno.land/x/graphql_deno@v15.0.0/mod.ts",
+    "linkedom": "https://esm.sh/linkedom@0.16.11",
+    "any-date-parser": "https://esm.sh/any-date-parser@1.5.4"
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --watch main.ts",
+    "start": "deno run --allow-net --allow-env main.ts"
+  }
+}
