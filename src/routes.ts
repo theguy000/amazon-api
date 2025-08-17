@@ -1,6 +1,6 @@
 import { Hono } from "hono";
-import searchRoutes from "@/search/search.routes.ts";
-import productRoutes from "@/product/product.routes.ts";
+import searchRoutes from "./search/search.routes.ts";
+import productRoutes from "./product/product.routes.ts";
 import { countryMiddleware } from "./common/middlewares/country.middlewware";
 
 const routes = new Hono();
