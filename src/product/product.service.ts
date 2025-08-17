@@ -1,11 +1,11 @@
-import { amazonApi } from "@/common/amazon-api";
+import { amazonApi } from "@/common/amazon-api/index.ts";
 import { parseHTML } from "linkedom";
 import { HTTPException } from "hono";
-import { getCurrencyFromSymbol } from "@/common/utils/currency";
-import { parseNumber } from "@/common/utils/number";
-import { createImageVariants } from "@/common/utils/image";
-import { parseTable } from "@/common/utils/table";
-import { InsightAspect, Product, RatingReview } from "@/types/Product";
+import { getCurrencyFromSymbol } from "@/common/utils/currency.ts";
+import { parseNumber } from "@/common/utils/number.ts";
+import { createImageVariants } from "@/common/utils/image.ts";
+import { parseTable } from "@/common/utils/table.ts";
+import { InsightAspect, Product, RatingReview } from "@/types/Product.ts";
 import parser from "any-date-parser";
 
 export const get = async ({

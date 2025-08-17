@@ -1,6 +1,6 @@
 import { Context, HTTPException } from "hono";
-import * as searchService from "@/search/search.service";
-import { parseCountry } from "@/common/utils/country";
+import * as searchService from "@/search/search.service.ts";
+import { parseCountry } from "@/common/utils/country.ts";
 
 export const search = async (c: Context) => {
   const query = c.req.query("query");

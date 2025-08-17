@@ -2,13 +2,13 @@ import { Hono } from "hono";
 import { graphqlServer } from "@hono/graphql-server";
 import { buildSchema } from "graphql";
 
-import { SearchSchema } from "@/types/Search";
-import { CommonSchema } from "@/types/Common";
-import { ProductSchema } from "@/types/Product";
-import * as searchController from "@/search/search.controller";
-import * as productController from "@/product/product.controller";
+import { SearchSchema } from "@/types/Search.ts";
+import { CommonSchema } from "@/types/Common.ts";
+import { ProductSchema } from "@/types/Product.ts";
+import * as searchController from "@/search/search.controller.ts";
+import * as productController from "@/product/product.controller.ts";
 
-import playgroundHandler from "@/common/playground";
+import playgroundHandler from "@/common/playground/index.ts";
 
 const graphql = new Hono();
 
