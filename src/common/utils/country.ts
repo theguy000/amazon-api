@@ -1,4 +1,4 @@
-import { COUNTRYWISE_AMAZON_API_BASE } from "@/config";
+import { COUNTRYWISE_AMAZON_API_BASE } from "@/config.ts";
 import { HTTPException } from "hono";
 
 export const parseCountry = (country: string) => {

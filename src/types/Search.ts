@@ -1,4 +1,4 @@
-import { Image } from "./Common";
+import { Image } from "./Common.ts";
 
 export interface SearchItem {
   id: string;

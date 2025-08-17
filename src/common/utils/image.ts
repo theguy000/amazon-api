@@ -1,4 +1,4 @@
-import { Image } from "@/types/Common";
+import { Image } from "@/types/Common.ts";
 
 export function createImageVariants(
   imageUrl: string | null | undefined
